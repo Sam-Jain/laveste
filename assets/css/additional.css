@@ -3,23 +3,24 @@ body {
   overflow-x: hidden;
 }
 
-#main {
-  margin-top: 50px;
-}
-
-#main header .major h2:after {
-  background-image: linear-gradient(90deg, #f3cd35, #f41544);
-}
-
 #nav + #main {
   padding-top: 0;
 }
 
-#wrapper #header .fullpage .section .slide {
-  padding: 10%;
-  background-color: #a2a2a2;
-  height: 100vh;
-  width: 100%;
+#wrapper #nav ul li:nth-child(3n) {
+  background-image: url("../../images/logo.png");
+  width: 124px;
+  height: 49px;
+}
+
+#wrapper #main {
+  margin-top: 50px;
+}
+
+#wrapper #main #intro .spotlight .content .major h2:after {
+  background-image: -webkit-linear-gradient(left, #f3cd35, #f41544);
+  background-image: -o-linear-gradient(left, #f3cd35, #f41544);
+  background-image: linear-gradient(to right, #f3cd35, #f41544);
 }
 
 #wrapper #cta {
@@ -36,4 +37,8 @@ body {
 
 .gallery .item img {
   width: 100%;
+}
+
+#main input[type="submit"]:hover, #main input[type="reset"]:hover, #main input[type="button"]:hover, #main button:hover, #main .button:hover {
+  background-image: linear-gradient(to right, rgba(243, 205, 53, 0.46), rgba(244, 21, 68, 0.46));
 }
